@@ -1,1 +1,1 @@
-# OCR-Python
+# OCR-Optical Character Recognition 
