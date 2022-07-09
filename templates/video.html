@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+<br>
+<h1 class='display-2' id="heading" style="color: 	#A52A2A;font-weight: normal; font-size: 40px; margin: 5px;">
+<b>--Real Time Mask Detection--</b>
+</h1>
+<br>
+<form action="{{url_for('release')}}" method='POST' enctype='multipart/form-data' id="form">
+    <input type="submit" name="btn" value='Stop Real Time Video' class='btn btn-danger'> 
+</form>
+<div style="justify-content: center; display: flex; margin: 20px;"><img src="{{ url_for('video') }}" height ="360px;" width="540px;"></div>
+</center>
+
+
+{% endblock %}

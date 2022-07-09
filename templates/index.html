@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+
+    <h3 style="color: #A52A2A;font-size: 50px; margin: 70px;"><b>OPTICAL CHARACTER RECOGNITION USING AI</b></h3>
+    <br>
+    <div class="container">
+        <form action="{{url_for('OnImage')}}" method='POST' enctype='multipart/form-data' id="form">
+            <input type="submit" name="btn" value='Optical Character Recognition on image' class='btn btn-success' style="justify-content: center; margin-top: 30px; font-size:20px;"> 
+        </form>
+    </div>
+
+</center>
+
+{% endblock %}

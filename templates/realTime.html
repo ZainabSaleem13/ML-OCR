@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+<br>
+<h1 class='display-2' id="heading" style="color: 	#A52A2A; font-weight: normal; font-size: 40px; margin: 50px;">
+<b>--Face Mask Detection In Real Time--</b>
+</h1>
+<br>
+<form action="{{url_for('start')}}" method='POST' enctype='multipart/form-data' id="form" style="margin: 80px;">
+    <input type="submit" name="btn" value='Start Real Time Video' class='btn btn-success' style="font-size:20px;"> 
+</form>
+</center>
+
+
+{% endblock %}
